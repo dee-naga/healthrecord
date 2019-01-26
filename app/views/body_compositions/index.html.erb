@@ -1,0 +1,19 @@
+<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+  <thead>
+  <tr>
+    <% BodyComposition::DISPLAY_COLUMN_NAMES.each do |column_name| %>
+     <th><%= t("activerecord.attributes.body_compositions.#{column_name}") %></th>
+    <% end %>
+  </tr>
+  </thead>
+  <tbody>
+
+  <% @body_compositions.each do |b| %>
+  <tr>
+    <% b.display_strings.each do |str| %>
+      <td><%= str %></td>
+    <% end %>
+  </tbody>
+  </tr>
+  <% end %>
+</table>
