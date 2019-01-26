@@ -7,7 +7,7 @@ services:
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_0900_as_ci --default-authentication-plugin=mysql_native_password
     environment:
       TZ:  "/usr/share/zoneinfo/Asia/Tokyo"
-      MYSQL_DATABASE: freee_app_store_development
+      MYSQL_DATABASE: healthrecord_development
       MYSQL_USER: root
       MYSQL_ROOT_PASSWORD: root
     ports:
