@@ -1,0 +1,18 @@
+ja:
+  activerecord:
+    attributes:
+      body_compositions:
+        date: 日時
+        waist: ウエスト(cm)
+        weight: 体重(kg)
+        body_fat: 体脂肪率(%)
+        fat_by_kg: 体脂肪量(kg)
+        lbm: 除脂肪体重(kg)
+        bmi: BMI
+        basal_metabolism: 基礎代謝
+        physical_age: 身体年齢(歳)
+        skeletal_muscle_level: 骨格筋レベル
+        bone_level: 骨レベル
+        visceral_fat_level: 内臓脂肪レベル
+        water_content: 水分量 (%)
+        memo: メモ
