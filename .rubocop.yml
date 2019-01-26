@@ -1,0 +1,14 @@
+inherit_from:
+  - .rubocop_rules.yml
+
+AllCops:
+  DisplayCopNames: true
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'node_modules/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - 'config/deploy.rb'
+    - 'config/**/*'

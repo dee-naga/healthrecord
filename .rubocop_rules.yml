@@ -1,0 +1,90 @@
+# コーディング規約:
+#  https://github.com/C-FO/rubocop-freee/wiki/freee-Ruby-Style-Guide
+#  https://github.com/C-FO/rubocop-freee/wiki/freee-RSpec-Style-Guide
+
+LineLength:
+  Max: 120
+
+Metrics/AbcSize:
+  Max: 15 # Default 15
+  Exclude:
+  - 'spec/authenticator_helper.rb'
+
+Metrics/BlockLength:
+  Exclude:
+  - 'config/routes.rb'
+  - 'spec/**/*'
+  - 'config/initializers/authenticator.rb'
+  - 'lib/tasks/**/*'
+
+Metrics/ClassLength:
+  Max: 170 # Default 100
+
+Metrics/CyclomaticComplexity:
+  Max: 6 # Default 6
+
+Metrics/MethodLength:
+  Max: 15 # Default 10
+
+Metrics/LineLength:
+  Exclude:
+  - 'Gemfile'
+
+Naming/UncommunicativeMethodParamName:
+  Enabled: false
+
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/BeforeAfterAll:
+  Enabled: false
+
+RSpec/ContextWording:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Max: 15 # default 5
+
+RSpec/ImplicitSubject:
+  Enabled: false
+
+RSpec/InstanceVariable:
+  Enabled: false
+
+RSpec/MessageChain:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Max: 15 # default 1
+
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Enabled: false
+
+Style/AndOr:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+# これがEnabledだと、scope :some_scope, -> do ...
+# という複数行のscopeに -> の記号を使えなくなる
+Style/Lambda:
+  Enabled: false
+
+Style/Semicolon:
+  Enabled: false
